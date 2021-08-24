@@ -43,13 +43,13 @@ else{
 ```
 ### Operadores Logicos
 Para complementar a las condicionales estan los operadores logicos **AND**, **OR**, **XOR**, **NOT**; que sirven para hacer una una condicional mas compleja. 
-#### AND
+#### AND &&
 ambas condiciones tienen que ser verdaderas para que el reultado sea ***true*** de otra forma regresara ***false***
-#### OR
+#### OR ||
 Con una condicion verdadera aunque la otra llegue a ser falsa regresara ***true*** si ambas son falsas regresara ***false***
-### XOR
+### XOR ^^
 Solo una condicion debe ser verdadera para que sea ***true*** si ambas son verdaderas entonces sera ***false***
-### NOT
+### NOT !
 Invierte el resultado donde un *false* se hace ***true*** y un se true se hace ***false***
 
 ## Matematicas en C++
