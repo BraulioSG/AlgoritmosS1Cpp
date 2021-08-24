@@ -17,7 +17,7 @@ Todo el codigo dentro de la funcion *int main() {}* sera lo que se ejecuta.
 ## Declaracion de Variables en C++
 Para la declaracion de varialbes en C++ se usa el tipo de dato, el nombre de la variable, signo de asignacion y valor.
 *IMPORTANTE NO OLVIDAR EL PUNTO Y COMA (;) AL FINAL DE CUALQUIER INSTRUCCION*
-```
+```cpp
 int edad = 17
 ```
 - int => tipo de variable
@@ -26,15 +26,31 @@ int edad = 17
 - 17 => valor de la variable
 
 ## Pedir datos e imprimir datos en consola C++
-Para empezar a pedir datos y para poder imprimirlos en la consola es necesario importar la libreria *iostream* al codigo. `#include <iostream>`. Luego se agrega el *namespace* (muy complejo de entender el *namespace* para primer semestre) al codigo. `using namespace std`. Finalmente para pedir datos y almacenarlos en una variable se usa `cin` (console input) `cin >> edad`. Para imprimir datos en la consola se usa `cout` (console output) `cout << "la edad es " << edad << endl;` donde la variable no lleva comillas y *endl* significa (end of the line)
+Para empezar a pedir datos y para poder imprimirlos en la consola es necesario importar la libreria *iostream* al codigo. 
+```cpp
+#include <iostream>
+```
+Luego se agrega el *namespace* (muy complejo de entender el *namespace* para primer semestre) al codigo.
+```cpp
+using namespace std,
+```
+ Finalmente para pedir datos y almacenarlos en una variable se usa `cin` (console input) 
+ ```cpp 
+ cin >> edad;
+ ```
+Para imprimir datos en la consola se usa `cout` (console output) 
+```cpp
+cout << "la edad es " << edad << endl;
+``` 
+donde la variable no lleva comillas y *endl* significa (end of the line)
 
 ## Condicionales 
 Las condicionales son el rombo en el diagrama de flujo, y como su nombre lo indica, sirven para ejecutar un codigo dependiendo de una condicion. *if (condicion) then [...] else then [...]* y cada bloque se separa por las llaves `{}`. las condicionales pueden ser 3: if, else if (opcional) y else(opcional).
-```
+```cpp
 if (condicion) {
     ejecuta este codigo;
 }
-else if (condicion 2){`
+else if (condicion2){`
     ejecuta este otro codigo;
 }
 else{
@@ -45,15 +61,40 @@ else{
 Para complementar a las condicionales estan los operadores logicos **AND**, **OR**, **XOR**, **NOT**; que sirven para hacer una una condicional mas compleja. 
 #### AND &&
 ambas condiciones tienen que ser verdaderas para que el reultado sea ***true*** de otra forma regresara ***false***
+| condicion A | condicion B | resultado|
+| --- | --- | --- |
+| 1 | 1 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 0 | 0 | 0 |
 #### OR ||
 Con una condicion verdadera aunque la otra llegue a ser falsa regresara ***true*** si ambas son falsas regresara ***false***
+| condicion A | condicion B | resultado|
+| --- | --- | --- |
+| 1 | 1 | 1 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 0 | 0 | 0 |
 #### XOR ^^
 Solo una condicion debe ser verdadera para que sea ***true*** si ambas son verdaderas entonces sera ***false***
+| condicion A | condicion B | resultado|
+| --- | --- | --- |
+| 1 | 1 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 0 | 0 | 0 |
 #### NOT !
 Invierte el resultado donde un *false* se hace ***true*** y un se true se hace ***false***
+| condicion A | resultado|
+| --- | --- |
+| 0 | 1 |
+| 1 | 0 |
 
 ## Matematicas en C++
-Para algunas operaciones matematicas es necesario importar la libreria `math.h` al codigo. `#import <math.h>`
+Para algunas operaciones matematicas es necesario importar la libreria `math.h` al codigo. 
+```cpp
+#import <math.h>
+```
 Esta libreria te permite hacer operaciones mas complejas como:
 - srqt() raiz cuadrada
 - pow() potencias
