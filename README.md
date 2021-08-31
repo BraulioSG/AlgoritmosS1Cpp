@@ -139,7 +139,7 @@ ya armado quedaria:
 ```cpp
 for (int i = 0; i < 10; i++){
     //bloque de ejecucion
-    cout << i ; 
+    cout << i << " "; 
 }
 ```
 `output: 0 1 2 3 4 5 6 7 8 9`
@@ -151,7 +151,7 @@ int i = 0;
 
 while (i < 10){
     //bloque de ejecucion
-    cout << i;
+    cout << i << " ";
     i++; 
 }
 ```
@@ -161,7 +161,7 @@ El do while es igual que el while solo que primero ejecuta y luego revisa si la 
 ```cpp
 do{
     //bloque de ejecucion
-    cout << i;
+    cout << i << " "; 
     i++
 }while(i < 10)
 ```
