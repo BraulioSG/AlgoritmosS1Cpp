@@ -1,8 +1,2 @@
-calculadora.exe
-introduccion.exe
-calculadoraBasica.exe
-vacunas.exe
-distancias.exe
-switch.exe
-loops.exe
+*.exe
 .vscode
