@@ -128,9 +128,10 @@ En el caso anterior se mostrara en pantalla `tu calificacion es de 9`,  donde `b
 los loops son bucles que ejecutan varias veces un codigo mientras se cumpla una concidion. 
 ### For Loop
 se declara con la palabra clave `for (){}`, dentro de los parentecis van 3 valores
-- variable de iteracion
-- condicion
-- pasos
+* variable de iteracion
+* condicion
+* pasos
+
 la varible de iteracion es la variable que se va a evualuar para ver si la condicion continua o no `int i = 0`. 
 la condicion se encarga si se va a seguir ejecutando el bucle o no `i < 10` se ejecutara siempre y cuando i sea menor a 10. 
 los pasos son como cambia la variable de iteracion `i++` a i se le suma uno por cada vez que se ejecute el ciclo.
