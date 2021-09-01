@@ -93,7 +93,7 @@ Invierte el resultado donde un *false* se hace ***true*** y un se true se hace *
 ## Matematicas en C++
 Para algunas operaciones matematicas es necesario importar la libreria `math.h` al codigo. 
 ```cpp
-#import <math.h>
+#include <math.h>
 ```
 Esta libreria te permite hacer operaciones mas complejas como:
 - srqt() raiz cuadrada
